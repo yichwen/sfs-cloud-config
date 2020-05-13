@@ -1,3 +1,10 @@
+spring:
+  application:
+    name: tokowha-eureka-server
+
+server:
+  port: 14001
+
 eureka:
   instance:
     hostname: localhost
