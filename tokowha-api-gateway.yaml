@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: tokowha-api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: httpbin
+        predicates:
+        - Method=GET
+        filters:
+        - SetPath=/get
+        uri: http://httpbin.org
+
+server:
+  port: 14002
